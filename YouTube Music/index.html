@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music </title>
+
+    <style type="text/css">
+        a{
+            text-decoration: none;
+        }
+    </style>
+   
+    <!-- 파비콘(favorite icon) 설정 -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- 모든 웹 브라우저의 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 뷰포트 렌더링 방식 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--구글 아이콘-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- main.css 연결 -->
+    <link rel="stylesheet" href="./css/main.css"> 
+    <!--main.js 연결 -->
+    <script defer src = "./js/main.js"></script>  
+    <!--li 태그 점 없애기-->
+    <style>
+        li{list-style: none;}
+        a{text-decoration: none;}
+    </style>
+
+</head>
+
+<body>
+    <!--헤더-->
+    <header>
+        <!--로고 이미지-->
+        <!--클릭 시 홈페이지로 이동-->
+        <a href="/" class="logo">
+            <img src="//music.youtube.com/img/on_platform_logo_dark.svg" alt= "youtubemusic icon"> 
+        </a>
+        <div class="main_menu">
+            <li class = "home"> 
+                <a href="/" target="_self">홈</a>
+            </li>
+            <li class = "explore"> 둘러보기</li>
+            <li class = "library"> 보관함 </li>
+            <ul id="search--open" class ="search-box">
+                    <li class="search-icon">
+                        <span class="material-icons">
+                        search
+                        </span>
+                    </li>
+                    <li class="search_text">
+                        검색
+                    </li>
+            </ul>
+            <nav id="search_menu">
+                <ul>
+                   <li id ="arrow-back" class="material-icons">
+                    arrow_back
+                    </li> 
+                </ul>
+            </nav>
+        </div>   
+        <div class="profile">
+            <img src = "https://yt3.ggpht.com/yti/ANoDKi4HwICBmf1kopUeguODRYz3tNmTX9__pjRatsfP=s108-c-k-c0x00ffffff-no-rj" width="25" height="25" border-radius: 50% >
+        </div>
+    </header>
+    
+    <!--본문-->
+    <section class="wrapper">
+        <main>
+            <div class="large"></div>
+            <div class = "grid-container">
+                <!--본문 첫번째 요소-->
+                <div class ="item1"> 즐겨 듣는 음악 </div>
+                <div class ="item1_items1">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA2MDFfMTE2%2FMDAxNTkxMDAwNzkwNDg3.XRo1wA2H_pd4jpbdHLLCzVqiigs0gZsT4Bgo97_H0_Mg.wJNbK4cQJgNUt-7GonQa-tBz6b5QUvdgqukEXdOY_mMg.JPEG.tkdgns3125%2Fghetoo_kids.jpg&type=a340" width="180">
+                    <div id="item1_1">사이렌 <br> 노래 • 호미들 </div>
+                </div>
+                <div class="item1_items2">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2021%2F03%2F31%2F0000187553_002_20210331094631839.jpg&type=sc960_832" width="180">
+                    <div id="item1_2">Peaches<br>노래 • Justin Bieber</div>
+                </div>
+                <div class="item1_items3">
+                    <img src="https://image.bugsm.co.kr/album/images/500/8448/844862.jpg" width="180">
+                    <div id="item1_3">Valentino <br> 노래 • 24KGoldn </div>
+                </div>
+                <div class="item1_items4">
+                    <img src="https://image.bugsm.co.kr/album/images/500/8448/844862.jpg" width="180">
+                    <div id="item1_4">Valentino <br> 노래 • 24KGoldn </div>
+                </div>
+                <div class="item1_items5">
+                    <img src="https://image.bugsm.co.kr/album/images/500/8448/844862.jpg" width="180">
+                    <div id="item1_5">Valentino <br> 노래 • 24KGoldn </div>
+                </div>
+                <!--본문 두번째 요소-->
+                <div class="item2">
+                    <span id="sub--title"> 다시 듣기</span><br>
+                    <span> 오후에 어울리는 음악</span>
+                </div>
+                <div class ="item2_items1">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA2MDFfMTE2%2FMDAxNTkxMDAwNzkwNDg3.XRo1wA2H_pd4jpbdHLLCzVqiigs0gZsT4Bgo97_H0_Mg.wJNbK4cQJgNUt-7GonQa-tBz6b5QUvdgqukEXdOY_mMg.JPEG.tkdgns3125%2Fghetoo_kids.jpg&type=a340" width="180">
+                    <div id="item2_1">사이렌 <br> 노래 • 호미들 </div>
+                </div>
+                <div class="item2_items2">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2021%2F03%2F31%2F0000187553_002_20210331094631839.jpg&type=sc960_832" width="180">
+                    <div id="item2_2">Peaches<br> Caesar, Giveon) <br> 노래 • Justin Bieber</div>
+                </div>
+                <div class="item2_items3">
+                    <img src="https://image.bugsm.co.kr/album/images/500/8448/844862.jpg" width="180">
+                    <div id="item2_3">Valentino <br> 노래 • 24KGoldn </div>
+                </div>
+                <div class="item2_items4">
+                    <img src="https://image.bugsm.co.kr/album/images/500/8448/844862.jpg" width="180">
+                    <div id="item2_4">Valentino <br> 노래 • 24KGoldn </div>
+                </div>
+                <div class="item2_items5">
+                    <img src="https://image.bugsm.co.kr/album/images/500/8448/844862.jpg" width="180">
+                    <div id="item2_5">Valentino <br> 노래 • 24KGoldn </div>
+                </div>
+                <!--본문 3번째 요소-->
+                <div class="item3">
+                    <span id="sub--title3"> 이 노래로 뮤직 스테이션 시작하기</span><br>
+                    <span> 빠른 선곡</span>
+                </div>
+                <div class="item3_items">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="column--1"></th>
+                                <th class="column--2"></th>
+                                <th class="column--3"></th>
+                                <th class="column--4"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160327_85%2Fzyyy106_1459089851347c899J_JPEG%2FattachImage_1216152998.jpeg&type=sc960_832" width="45"></td>
+                                <td>I love it(피처링: Dok2) <br> DEAN • 130 Mood : TRBL</td>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/200686/20068683.jpg" width="45"></td>
+                                <td>BERMUDA TRIANGLE (피처링: Crush, DEAN) <br> ZICO • BERMUDA TRIANGLE </td>
+                               
+                            </tr>
+                            <tr>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/202417/20241773.jpg" width="45"></td>
+                                <td>Airplane Mode(피처링:릴러마즈(Leellamarz)) <br> 해쉬 스완(Hash Swan) • Peridot</td>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/202340/20234010.jpg" width="45"></td>
+                                <td>사랑해줘(trust me)REMIX <br> YUMDDA 및 sogumm • 사랑해줘(Remix)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/202925/20292584.jpg" width="45"></td>
+                                <td>Right Away(피처링: pH-1)<br> Coogie 및 pH-1 • UP! </td>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/40389/4038968.jpg" width="45"></td>
+                                <td>가습기<br> 한요한 • 가습기 </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/141417/14141776.jpg" width="45"></td>
+                                <td>Go Crazy <br> Chris Brown 및 Young Thug • Slime & B </td>
+                                <td><img src="https://image.bugsm.co.kr/album/images/1000/203842/20384298.jpg" width="45"></td>
+                                <td>Young!(피처링: Jayci yucca) <br> Minit, 123 • UP </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div class="play-box">
+            dddd
+        </div>
+    </footer>
+</body>
+</html>

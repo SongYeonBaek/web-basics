@@ -1,0 +1,198 @@
+/* HEADER */
+header {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color: rgb(155, 153, 153);
+    width: 100%;
+    height: 60px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+}
+
+img {
+    margin: auto 10px;
+}
+
+.main_menu {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    cursor: pointer; 
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a:hover{color:whitesmoke;}
+.home:hover{color:whitesmoke;}
+.explore:hover{color:whitesmoke;}
+.library:hover{color:whitesmoke;}
+.search-box:hover{color:whitesmoke;}
+
+a {
+    text-decoration: none;
+    color: rgb(155, 153, 153);
+}
+
+
+.home {
+    margin-left: 50px;
+}
+
+.explore {
+    margin-left: 40px;
+}
+
+.library{
+    margin-left: 40px;
+}
+
+.search-box {
+    text-align: center;
+    width: 90px;
+    margin-left: 40px;
+}
+
+.search-icon {
+    float: left;
+}
+
+.search-text {
+    float: left;
+}
+
+nav{
+    background-color: rgb(66, 65, 65);
+    height:50px;
+    width: 700px;
+    transform: translateX(-400%);
+    
+}
+
+/* BODY */
+body {
+    width: 100%;
+    background: blueviolet;
+    margin:0 auto;
+}
+
+.large {
+    width : 100%;
+    height : 100px;
+    background: black;
+}
+
+section.wrapper {
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    height:2000px;
+    background: black;
+    padding: 20px 100px;
+}
+
+main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 10);
+    background-color: #2196F3;
+}
+  
+.grid-container > div {
+    background-color: black;
+    font-size: 14px;
+    padding: 10px;
+    color: whitesmoke;
+    line-height: 20px;
+    font-weight: 100;
+}
+/*첫 번째 요소*/
+.grid-container .item1 {
+    grid-row: 1 / span 1;
+    grid-column: 1/ span 5;
+    font-size : 28px;
+    font-weight: 700;
+    color: whitesmoke; 
+    float: left;
+    background-color: black;
+    height: 50px;
+}
+/*두 번째 요소*/
+.grid-container .item2 {
+    grid-row:3 / span 1;
+    grid-column: 1/ span 5;
+    font-size : 28px;
+    font-weight: 700;
+    color: whitesmoke; 
+    float: left;
+    background-color: black;
+    height: 80px;
+    padding: 60px 20px 0px;
+}
+
+#sub--title{
+      font-size: 14px;
+      color: rgb(155, 153, 153);
+      line-height:35px;
+      font-weight: 500;
+}
+/*세 번째 요소*/
+.grid-container .item3 {
+    grid-row: 5 / span 1;
+    grid-column: 1/ span 5;
+    font-size : 28px;
+    font-weight: 700;
+    color: whitesmoke; 
+    float: left;
+    background-color: black;
+    height: 80px;
+    padding: 60px 20px 0px;
+}
+#sub--title3{
+    font-size: 14px;
+    color: rgb(155, 153, 153);
+    line-height:35px;
+    font-weight: 500;
+}
+
+.item3_items {
+    grid-row: 6 / span 1;
+    grid-column: 1/ span 5;
+    position: relative;
+    display: flex;
+}
+
+.item3_items table {
+    margin: 0 auto;
+    width:1200px;
+}
+  
+td{
+    margin: 0 auto;
+}
+
+.column--1 {
+      width: 50px;
+}
+.column-2{
+      margin:0 auto;
+      padding: 0px 20px 0px;
+    
+}
+.column--3 {
+      width: 50px;
+}
+
+/*FOOTER*/
+footer{
+    color: rgb(155, 153, 153);
+    width: 100%;
+    height: 70px;
+    background:rgb(82, 81, 81);
+    position: fixed;
+}
